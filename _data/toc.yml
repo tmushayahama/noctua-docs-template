@@ -9,7 +9,7 @@
         - title: Creating GO Annotations
           url: "docs/tutorials/creating-annotations"
     - title: "Changelog"
-      url: "docs/changelog/noctua-form-2"
+      url: 
       children:
         - title: Noctua Form 2.0
           url: "docs/changelog/noctua-form-2"
