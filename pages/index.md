@@ -4,7 +4,47 @@ title: Noctua Form Documentation
 permalink: /
 ---
 
-# Noctua Form 2.0 Tutorial
+# Noctua Documentation
+
+## How the documentation is organized
+
+Noctua Form has a lot of documentation. A high-level overview of how it’s
+organized will help you know where to look for certain things:
+
+Noctua Form Tutorials take you by the hand through a series of steps to create a
+model, edit existing models and add more annotations to models. Start here if
+you’re new to Noctua or GO CAMs in general. Also look at the “First steps”
+below.
+
+Topic guides discuss key topics and concepts at a fairly high level and provide
+useful background information and explanation.
+
+How-to guides are recipes. They guide you through the steps involved in
+addressing key problems and use-cases. They are more advanced than tutorials and
+assume some knowledge of how Noctua and Noctua Form works.
+
+## What can you do with Noctua Form?
+
+- Creating GO annotations
+    - Creating a basic Activity Unit (MF, part of BP, occurs in CC
+    - Creating a Biological Process (BP) only annotation
+    - Creating a Cellular Component (CC) only annotation
+    - Adding contextual information to an annotation
+- Add annotations to an existing model
+- View existing annotations in a model
+- Choosing the right causal relation between activities (MFs)
+- Adding a NOT qualifier to an annotation
+
+With Activity Creator Form, you can create, add and view activities right in
+your web browser—no special software is required.
+
+## First steps
+
+Are you new to Noctua and Noctua Form? This is the place to start!
+
+From scratch: Overview | Installation
+Tutorials: 
+
 
 For a Quick Tutorial, check out [Quick Tutorial Docs](docs/quick-outline-tutorial.md)
 

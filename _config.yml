@@ -64,8 +64,8 @@ markdown: kramdown
 exclude: [_site, CHANGELOG.md, LICENSE, README.md, vendor]
 
 # External Links
-geneontology_url: http://geneontology.org/
-noctua_url: http://noctua-dev.berkeleybop.org/
+geneontology_url: "http://geneontology.org/"
+noctua_url: "http://noctua-dev.berkeleybop.org/"
 
 # Collections
 collections:
