@@ -1,93 +1,133 @@
 ---
 ---
+### **Adding contextual information to a basic Activity Unit**
 
-# Creating GO Annotations In Noctua
-
-## Creating a basic Activity Unit (MF, part of BP, occurs in CC)
-
-In this hands-on tutorial, you will learn how to create a basic activity using
-**C. elegans** as an example:
-
-### 1. Open the Activity Unit Form
- 
-- Click on ‘Create Activity’ to select an Activity Unit Form
-- A new empty form will slide in from left side
-  
-### 2. Add a Gene Product
-
-- Type in gene name: **mpk-1** (explain that returned entities are what is
+- Click on ‘Create Activity’
+- Using C. elegans as an example:
+    - Type in gene name: **mpk-1** (explain that returned entities are what is
         in gpi file and therefore in NEO)
-- Autocomplete options are presented in a pop-up window
-- Gene products link out to respective gene product pages via dbxrefs.yaml
+    - Autocomplete options are presented in a pop-up window
+    - Gene products link out to respective gene product pages via dbxrefs.yaml
 
-![]({{ site.baseurl }}/assets/img/create-autocomplete.gif)
+- Add an MF
+    - Search for ‘**protein kinase activity**’
+    - Autocomplete options are presented in a pop-up window
+    - Terms link out to AmiGO
+    - Evidence code autocomplete using ECO term names
+        - Search for ‘**direct assay**’
+        - GO codes are indicated with bold three-letter GO code
 
+    - Add a reference. Two options:
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
 
-### 3. Add a Molecular Function
+- Add an input to the MF
+    - Click on the ‘more options’ icon on the far right of the annotation line
+    - Scroll down to the Add option
+    - Select Add ‘**has input**’ (GP/Chemical)
+    - A new line for the ‘has input’ entity and evidence will appear
+    - Type in ‘**ced-3**’ and select the gene from the autocomplete menu
+    - Evidence code autocomplete using ECO term names
+        - Search for ‘**direct assay**’
+        - GO codes are indicated with bold three-letter GO code
 
-- Search for ‘**protein kinase activity**’
-- Autocomplete options are presented in a pop-up window
-- Terms link out to AmiGO
+    - Add a reference. Two options:
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
+    - Repeat steps i - vii to add ‘has output’ and/or ‘happens during’
+        contextual information, as needed.
 
+- Add that MF is ‘part of’ a BP
+    - Search for ‘**DNA damage response, detection of DNA damage**’
+    - Autocomplete options are presented in a pop-up window
+    - Terms link out to AmiGO
 
-![]({{ site.baseurl }}/assets/img/create-autocomplete-mf-linkouts.gif)
+    - Evidence code autocomplete using ECO term names
+        - Search for ‘**mutant phenotype**’
+        - GO codes are indicated with bold three-letter GO code
 
+    - Add a reference. Two options:
 
-#### 3.1. Evidence code autocomplete using ECO term names
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
 
-- Search for ‘**direct assay**’
-- GO codes are indicated with bold three-letter GO code
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
 
-![]({{ site.baseurl }}/assets/img/create-autocomplete-evidence.gif)
+- Add that the first BP is ‘part of’ a second BP
 
-#### 3.2. Add a reference. Two options:
+    - Click on the ‘more options’ icon on the far right of the annotation line
+    - Scroll down to the Add option
+    - Select Add ‘**part of**’ (Biological Process)
+    - A new line for the ‘part of’ BP and evidence will appear
+    - Type in ‘**apoptotic process**’ and select the GO term from the
+        autocomplete menu
 
-- Cut and paste a DB and id, e.g. **PMID:31296532 OR**
-- Click on the +/lines symbol
-  - Pop-up appears with a select drop-down of dbs for references: PMID,
-  - DOI, GO_REF
-  - Select **PMID**
-  - Add identifier: **31296532**
+    - Evidence code autocomplete using ECO term names
 
+        - Search for ‘**mutant phenotype**’
+        - GO codes are indicated with bold three-letter GO code
 
-![]({{ site.baseurl }}/assets/img/create-autocomplete-ref.gif)
+    - Add a reference. Two options:
 
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
 
-> Note that at this point you can save just your MF annotation by clicking on
-> the SAVE button. This will save the MF annotation and automatically save the
-> resulting model. However, if you want to add contextual information, such as
-> MF inputs, or a Biological Process or Cellular Component annotation, you
-> should wait until you’ve added all information before saving.
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
 
+    - Repeat steps i - vii to add more ‘part of’ BPs, as needed.
 
-### 4. Add that MF is ‘part of’ a BP
+- Add that MF ‘occurs in’ a CC
 
-- Search for ‘**DNA damage response, detection of DNA damage**’
-- Autocomplete options are presented in a pop-up window
-- Terms link out to AmiGO
-- Evidence code autocomplete using ECO term names
-  - Search for ‘**mutant phenotype**’
-  - GO codes are indicated with bold three-letter GO code
-- Add a reference. Two options:
-  - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
-  - Click on the +/lines symbol
-  - Pop-up appears with a select drop-down of dbs for references: PMID, DOI,
-    GO_REF
-  - Select **PMID**
-  - Add identifier: **31296532**
+    - Search for ‘**nucleus**’
+    - Autocomplete options are presented in a pop-up window
+    - Terms link out to AmiGO
 
-### 5. Add that MF ‘occurs in’ a CC
+    - Evidence code autocomplete using ECO term names
+        - Search for ‘**direct assay**’
+        - GO codes are indicated with bold three-letter GO code
+    - Add a reference. Two options:
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
 
-- Search for ‘**nucleus**’
-- Autocomplete options are presented in a pop-up window
-- Terms link out to AmiGO
-- Evidence code autocomplete using ECO term names
-  - Search for ‘**direct assay**’
-    - GO codes are indicated with bold three-letter GO code
-- Add a reference. Two options:
-  - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
-  - Click on the +/lines symbol
-    - Pop-up appears with a select drop-down of dbs for references: PMID,
-            DOI, GO_REF
-      - Select **PMID**
-      - Add identifier: **31296532**
+- Add that a CC is ‘part of’ a cell
+    - Click on the ‘more options’ icon on the far right of the annotation line
+    - Scroll down to the Add option
+    - Select Add ‘**part of**’ (Cell Type)
+    - A new line for the ‘part of’ cell type and evidence will appear
+    - Type in ‘**germ cell**’ and select the WBbt:0006796 from the
+        autocomplete menu
+
+    - Evidence code autocomplete using ECO term names
+        - Search for ‘**direct assay**’
+        - GO codes are indicated with bold three-letter GO code
+
+    - Add a reference. Two options:
+        - Cut and paste a DB and id, e.g. **PMID:31296532 OR**
+        - Click on the +/lines symbol
+            - Pop-up appears with a select drop-down of dbs for references:
+                PMID, DOI, GO_REF
+            - Select **PMID**
+            - Add identifier: **31296532**
+
+    - Repeat steps i - vii to add ‘part of’ for tissue and organism contextual
+        information, as needed. Note that organismal contextual information is
+        not needed except for when relevant to multi-species processes.
+

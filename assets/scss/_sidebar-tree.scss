@@ -2,9 +2,11 @@
 // Left side navigation
 //
 .noc-sidebar-nav {
-    padding-right: 0.5rem;
+    padding-right: 12px;
     margin-right: -15px;
     margin-left: -15px;
+
+    font-size: 14px;
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
@@ -30,8 +32,8 @@
         }
 
         @include media-breakpoint-up(md) {
-            & > ul {
-                padding-left: .5rem;
+            &>ul {
+                padding-left: 12px;
             }
         }
 
@@ -48,7 +50,7 @@
         }
 
         a {
-            color: $gray-900;
+            color: #000;
         }
     }
 
@@ -58,7 +60,6 @@
 
         &__page {
             color: $gray-700;
-            font-weight: $font-weight-light;
         }
     }
 
@@ -79,7 +80,7 @@
         }
 
         .nav-link {
-             padding: 0 0 1rem;
+            padding: 0 0 1rem;
         }
     }
 }

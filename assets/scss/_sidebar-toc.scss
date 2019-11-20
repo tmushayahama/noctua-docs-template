@@ -3,6 +3,7 @@
 //
 .noc-toc {
     border-left: 1px solid $border-color;
+    font-size: 13px;
 
     @supports (position: sticky) {
         position: sticky;
@@ -18,7 +19,7 @@
 
     a {
         display: block;
-        font-weight: $font-weight-light;
+        font-weight: #555;
         padding-bottom: .25rem;
     }
 
@@ -38,8 +39,9 @@
     }
 
     #TableOfContents {
+
         // Hugo's ToC is a mouthful, this can be used to style the top level h2 entries.
-        > ul > li > ul > li > a {}
+        >ul>li>ul>li>a {}
 
         a {
             color: $gray-600;

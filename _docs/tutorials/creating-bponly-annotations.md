@@ -1,3 +1,6 @@
+---
+---
+
 ### **Creating a Biological Process (BP) only annotation**
 
 - Click on the arrow to the left of the ‘Create Activity’ icon.
