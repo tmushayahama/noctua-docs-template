@@ -8,6 +8,12 @@
       children:
         - title: Creating GO Annotations
           url: "docs/tutorials/creating-annotations"
+        - title: Adding Contextual Information
+          url: "docs/tutorials/adding-contextual-information"
+        - title: Creating BP Only Annotation
+          url: "docs/tutorials/creating-bponly-annotations"
+        - title: Creating CC Only Annotation
+          url: "docs/tutorials/creating-cconly-annotations"
     - title: "Changelog"
       url: 
       children:
