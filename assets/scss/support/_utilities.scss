@@ -29,26 +29,26 @@
 
 // Common util classes.
 
-.td-border-top {
+.noc-border-top {
     border: none;
     border-top: 1px solid #eee;
 }
 
-.td-border-none {
+.noc-border-none {
     border: none;
 }
 
-.td-block-padding {
-    padding-top: $td-block-space-top-base ;
-    padding-bottom: $td-block-space-bottom-base;
+.noc-block-padding {
+    padding-top: $noc-block-space-top-base ;
+    padding-bottom: $noc-block-space-bottom-base;
 
     @include media-breakpoint-up(md) {
-        padding-top: $td-block-space-top-base * 1.25;
-        padding-bottom: $td-block-space-bottom-base * 1.25;
+        padding-top: $noc-block-space-top-base * 1.25;
+        padding-bottom: $noc-block-space-bottom-base * 1.25;
     }
 }
 
-.td-overlay {
+.noc-overlay {
     position: relative;
 
     &::after {
@@ -74,7 +74,7 @@
     }
 }
 
-.td-max-width-on-larger-screens {
+.noc-max-width-on-larger-screens {
     @include media-breakpoint-up(lg) {
         max-width: 80%;
     }

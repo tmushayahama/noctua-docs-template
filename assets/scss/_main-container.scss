@@ -1,12 +1,12 @@
 // The outer page container i.e. common styles for any page.
-.td-outer {
+.noc-outer {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 // The outer page container for the default base template.
-.td-default {
+.noc-default {
     main {
         section:first-of-type {
             @include media-breakpoint-up(md) {
@@ -15,12 +15,12 @@
         }
 
         section {
-            @extend .td-block-padding;
+            @extend .noc-block-padding;
         }
     }
 }
 
-.td-main {
+.noc-main {
     flex-grow: 1;
 
     main {

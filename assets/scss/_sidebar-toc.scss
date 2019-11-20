@@ -1,7 +1,7 @@
 //
 // Right side toc
 //
-.td-toc {
+.noc-toc {
     border-left: 1px solid $border-color;
 
     @supports (position: sticky) {
@@ -31,7 +31,7 @@
         margin-left: 0.5rem;
     }
 
-    .td-page-meta {
+    .noc-page-meta {
         a {
             font-weight: $font-weight-medium;
         }

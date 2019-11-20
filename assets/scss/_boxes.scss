@@ -1,5 +1,5 @@
 // Boxes on the home page and similar.
-.td-box {}
+.noc-box {}
 
 // box-variant creates the main style for a colored section used on the site.
 @mixin box-variant($parent, $color-name, $color-value) {
@@ -12,7 +12,7 @@
             color: $text-color;
             background-color: #{$color-value};
 
-            .td-arrow-down {
+            .noc-arrow-down {
                 &::before {
                     left: 50%;
                     margin-left: -30px;
@@ -39,7 +39,7 @@
 }
 
 // Common min-height modifiers used for boxes.
-@mixin td-box-height-modifiers($parent) {
+@mixin noc-box-height-modifiers($parent) {
     #{$parent} {
         &--height-auto {}
 
@@ -75,10 +75,10 @@
     }
 }
 
-@include td-box-height-modifiers(".td-box");
+@include noc-box-height-modifiers(".noc-box");
 
 // Styling for section boxes
-.td-box {
+.noc-box {
   .row.section {
        padding-left: 5rem;
        padding-right: 5rem;
@@ -101,27 +101,27 @@
 }
 // Styling for community page link boxes
 
-.td-box.linkbox {
+.noc-box.linkbox {
    padding: 5rem;
 }
 
 // This allows "painting by numbers"
-@for $i from 1 through length($td-box-colors) {
-    $c: nth($td-box-colors, $i);
+@for $i from 1 through length($noc-box-colors) {
+    $c: nth($noc-box-colors, $i);
     $name: $i - 1;
 
-    @include box-variant(".td-box", $name, $c);
+    @include box-variant(".noc-box", $name, $c);
 }
 
 // Same as above with all the theme color names.
 @each $color, $value in $colors {
-    @include box-variant(".td-box", $color, $value);
+    @include box-variant(".noc-box", $color, $value);
 }
 
 @each $color, $value in $theme-colors {
-    @include box-variant(".td-box", $color, $value);
+    @include box-variant(".noc-box", $color, $value);
 }
 
 @each $color, $value in $grays {
-    @include box-variant(".td-box", $color, $value);
+    @include box-variant(".noc-box", $color, $value);
 }

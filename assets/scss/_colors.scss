@@ -32,8 +32,8 @@
 }
 
 // This allows "painting by numbers", i.e. picking colors by a shortcode Ordianal.
-@for $i from 1 through length($td-box-colors) {
-    $value: nth($td-box-colors, $i);
+@for $i from 1 through length($noc-box-colors) {
+    $value: nth($noc-box-colors, $i);
     $name: $i - 1;
     $text-color: color-yiq($value);
 

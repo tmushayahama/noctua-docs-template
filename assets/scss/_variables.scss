@@ -4,7 +4,7 @@ Bootstrap variables overrides for theme.
 See https://github.com/twbs/bootstrap/pull/23260
 */
 
-@fa-font-path :        "../webfonts";
+@fa-font-path : "../webfonts";
 
 // Bootstrap flags. For more, see https://getbootstrap.com/docs/4.0/getting-started/theming/
 $enable-gradients: true;
@@ -13,11 +13,11 @@ $enable-shadows: true;
 
 // Theme flags.
 
-$td-enable-google-fonts: true !default;
+$noc-enable-google-fonts: true !default;
 
 // Theme colors
 
-$primary: #30638E !default;
+$primary: #002379 !default;
 $primary-light: lighten($primary, 75%) !default;
 $secondary: #FFA630 !default;
 $success: #3772FF !default;
@@ -46,13 +46,26 @@ $code-color: darken($secondary, 20%) !default;
 // UI element colors
 
 $border-color: $gray-300 !default;
-$td-sidebar-bg-color: rgba($primary, 0.03) !default;
-$td-sidebar-border-color: $border-color !default;
+$noc-sidebar-bg-color: rgba($primary, 0.03) !default;
+$noc-sidebar-border-color: $border-color !default;
 
 // Background colors for the sections on home page etc. It is a paint by number system, starting at 0, where the number is taken from the shortcode's ordinal
 // if not provided by the user.
 // These colors are all part of the theme palette, but the mix is fairly random to create variation. This can be overridden by the project if needed.
-$td-box-colors: $dark, $primary, $secondary, $info, $primary-light, $gray-600, $success, $warning, $dark, $danger, $primary, $secondary, $primary-light, $info;
+$noc-box-colors: $dark,
+$primary,
+$secondary,
+$info,
+$primary-light,
+$gray-600,
+$success,
+$warning,
+$dark,
+$danger,
+$primary,
+$secondary,
+$primary-light,
+$info;
 
 $link-color: darken($blue, 15%) !default;
 $link-decoration: none !default;
@@ -65,15 +78,30 @@ $google_font_name: "Open Sans" !default;
 $google_font_family: "Open+Sans:300,300i,400,400i,700,700i" !default;
 $web-font-path: "https://fonts.googleapis.com/css?family=#{$google_font_family}";
 
-$td-fonts-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$noc-fonts-serif: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
 
-@if $td-enable-google-fonts {
-    $td-fonts-serif: prepend($td-fonts-serif, "#{$google_font_name}");
+@if $noc-enable-google-fonts {
+  $noc-fonts-serif: prepend($noc-fonts-serif, "#{$google_font_name}");
 }
 
-$font-family-sans-serif: $td-fonts-serif !default;
+$font-family-sans-serif: $noc-fonts-serif !default;
 
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
 $font-family-base: $font-family-sans-serif !default;
 $font-size-base: 1rem !default;
 
@@ -110,8 +138,8 @@ $display4-size: 1.75rem !default;
 // Space
 
 $spacer: 1rem;
-$td-block-space-top-base: 4 * $spacer;
-$td-block-space-bottom-base: 4 * $spacer;
+$noc-block-space-top-base: 4 * $spacer;
+$noc-block-space-bottom-base: 4 * $spacer;
 
 // Pagination
 

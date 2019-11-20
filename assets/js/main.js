@@ -16,7 +16,7 @@ layout: null
         return element.offset().top + element.outerHeight();
     }
     $(function() {
-        var promo = $(".js-td-cover");
+        var promo = $(".js-noc-cover");
         if (!promo.length) {
             return
         }
@@ -28,7 +28,7 @@ layout: null
         }
         $(window).on('scroll', function() {
             var navtop = $('.js-navbar-scroll').offset().top - $(window).scrollTop();
-            var promoOffset = bottomPos($('.js-td-cover'));
+            var promoOffset = bottomPos($('.js-noc-cover'));
             var navbarOffset = $('.js-navbar-scroll').offset().top;
             if ((promoOffset - navbarOffset) < threshold) {
                 $('.js-navbar-scroll').addClass('navbar-bg-onscroll');
@@ -44,7 +44,7 @@ layout: null
     var Search = {
         init: function() {
             $(document).ready(function() {
-                $(document).on('keypress', '.td-search-input', function(e) {
+                $(document).on('keypress', '.noc-search-input', function(e) {
                     if (e.keyCode !== 13) {
                         return
                     }
